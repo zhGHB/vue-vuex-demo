@@ -1,0 +1,54 @@
+@import 'var.less';
+.home{
+	background: @bg;
+}
+.banner-box{
+	width:100%;
+	height: 16rem;
+	img{
+		height: 16rem;
+		width:100%;
+	}
+}
+.lists-box{
+	margin-top: 1rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	padding-bottom: 1rem;
+
+	img{
+		width:100%;
+		height: 16rem;
+	}
+	.intro{
+		margin:1rem;
+		h4{
+			font-weight: bold;
+		}
+		.grade{
+			color: @gradeColor;
+            font-weight: 500;
+            font-size:@fontSize*1.3;
+		}
+	}
+}
+.go-top{
+	position:fixed;
+	right: 2rem;
+	bottom: -4rem;
+	border-radius:50%;
+	width:4rem;
+	height: 4rem;
+	text-align: center;
+	line-height: 4rem;
+	background: rgba(0,0,0,0.75);
+	transition: all 0.5s linear;
+	.icon{
+		font-size:3rem;
+		color:#fff;
+	}
+	&.active{
+		bottom:2rem;
+		transition: all 0.5s linear;
+	}
+}

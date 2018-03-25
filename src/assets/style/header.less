@@ -1,0 +1,29 @@
+
+@import 'var.less';
+.header{
+	height: 4rem;
+	background: @headerBG;
+	position: relative;
+	&>.icon{
+		position: absolute;
+		&:first-child{
+			left:1rem;
+			top:.8rem;
+		}
+		&:nth-child(2){
+			right: 1rem;
+			top:.8rem;
+		}
+	}
+	.icon-bottom{
+		font-size:1rem;
+		margin-left: .4rem;
+	}
+}
+.content{
+	margin-left:4rem;
+	margin-right: 4rem;
+	line-height: 4rem;
+	font-size:@fontSize;
+	color:@fontColor;
+}
